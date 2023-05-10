@@ -1,16 +1,14 @@
 import React from "react"; // Good practice for library according to GPT
 import Typography from "@mui/material/Typography";
-import { SxProps, Theme } from "@mui/material";
+import { Box, SxProps, Theme } from "@mui/material";
 
-export default function Copyright({name, sx}: { name: string, sx?: SxProps<Theme> }) {
+export default function Copyright({ name, sx }: { name: string, sx?: SxProps<Theme> }) {
   return (
-    <Typography
+    <Box
+      component="span"
       sx={sx}
-      align="center"
     >
-      {"Copyright © "}
-      {name} {new Date().getFullYear()}
-      {"."}
-    </Typography>
+      Copyright © {name} {new Date().getFullYear()}
+    </Box>
   );
 }
