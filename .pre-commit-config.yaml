@@ -1,0 +1,36 @@
+# .pre-commit-config.yaml
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+    -   id: check-merge-conflict
+    -   id: check-case-conflict
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+      #-   id: check-added-large-files
+    -   id: detect-aws-credentials
+    -   id: detect-private-key
+    -   id: forbid-submodules
+-   repo: https://github.com/psf/black
+    rev: 23.1.0
+    hooks:
+    -   id: black
+-   repo: https://github.com/PyCQA/autoflake
+    rev: v2.0.1
+    hooks:
+    -   id: autoflake
+-   repo: https://github.com/PyCQA/flake8
+    rev: 6.0.0
+    hooks:
+    -   id: flake8
+-   repo: https://github.com/awslabs/cfn-python-lint
+    rev: v0.73.1 # The version of cfn-lint to use
+    hooks:
+    -   id: cfn-python-lint
+        files: .*\.template$
+# -   repo: https://github.com/hadolint/hadolint
+#     rev: v2.12.0
+#     hooks:
+#     -   id: hadolint
+#         files: Dockerfile

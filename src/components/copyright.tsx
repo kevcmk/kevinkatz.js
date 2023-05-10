@@ -14,4 +14,3 @@ export default function Copyright({name, sx}: { name: string, sx?: SxProps<Theme
     </Typography>
   );
 }
-
