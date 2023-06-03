@@ -16,8 +16,11 @@
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.12.3",
+    "@types/uuid": "^9.0.1",
+    "aws-sdk": "^2.1390.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "typescript": "^5.0.4"
