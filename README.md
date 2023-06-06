@@ -1,5 +1,12 @@
 # Kevin Katz's ES Components
 
+## tl;dr
+
+git commit ...
+npm run build
+npm version {major,minor,patch}
+npm publish
+
 ## Publish
 
 ``` npm publish ```
